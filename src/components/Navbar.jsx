@@ -9,6 +9,29 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 import icon from "../images/icon.png";
+// const menuItems = [
+//   {
+//     key: "home",
+//     icon: <HomeOutlined />,
+//     label: "Home",
+//   },
+//   {
+//     key: "fund",
+//     icon: <FundOutlined />,
+//     label: "Cryptocurrencies",
+//   },
+//   {
+//     key: "money",
+//     icon: <MoneyCollectOutlined />,
+//     label: "Exchanges",
+//   },
+//   {
+//     key: "bulb",
+//     icon: <BulbOutlined />,
+//     label: "News",
+    
+//   },
+// ];
 const Navbar = () => {
   return (
     <div className="nav-container">
@@ -19,7 +42,8 @@ const Navbar = () => {
         </Typography.Title>
         {/* <Button className="menu-control-container"></Button> */}
       </div>
-      <Menu theme="dark">
+
+      <Menu theme="dark" >
         <Menu.Item icon={<HomeOutlined />}>
           <Link to="/">Home</Link>
         </Menu.Item>
