@@ -1,9 +1,10 @@
-import { Switch, Link, Route, Routes } from 'react-router-dom';
+import { Switch, Link, Route, Routes, useParams } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd';
 import { Navbar, Exchanges, Homepage, Cryptodetails, Cryptocurrencies, News } from './components';
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
       <div className='navbar'>
