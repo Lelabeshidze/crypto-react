@@ -32,15 +32,15 @@ const Cryptocurrencies = ({ simplified }) => {
       )}
 
       <Row gutter={[32, 32]} className="crypto-card-container">
-        {cryptos?.map((currency) => {
-          console.log(currency.uuid);
+        {cryptos?.map((currency,index) => {
+         
           return (
             <Col
               xs={24}
               sm={12}
               lg={6}
               className="crypto-card"
-              key={currency.uuid}
+              key={index}
             >
               <Link to={`/crypto/${currency.uuid}`}>
                 <Card
